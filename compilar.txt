@@ -1,0 +1,1 @@
+fpc -Co -Cr -Miso -gl triangulo
