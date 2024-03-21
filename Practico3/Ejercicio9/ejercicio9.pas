@@ -8,6 +8,7 @@ var
 	unidades_mil, punto, centenas, decenas, unidades: Char; 
 
 begin
+	punto := '.';
 	writeln('Ingrese un numero entero de maximo 4 cifras: ');
 	readln(entrada);
 	
@@ -18,14 +19,14 @@ begin
 
 	if (entrada div 1000 = 0) then
 		begin
-			unidades_mil := ' ';
-			punto := ' ';
+			unidades_mil := Chr(0);
+			punto := Chr(0);
 		end;
 
 	if ((entrada div 100) mod 10 = 0) then
 		begin
-			centenas := ' ';
-		end; 
+			centenas := Chr(0);
+		end;
 
 	writeln(unidades_mil, punto, centenas, decenas, unidades);
 end.	
