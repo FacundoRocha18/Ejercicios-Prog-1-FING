@@ -43,7 +43,7 @@ begin
 			signo4 := '+';
 		end;
 
-	if (not (a_comparar = centenas)) or (not (a_comparar = decenas)) or (not (a_comparar = unidades)) then
+	if (not (a_comparar = centenas)) and (not (a_comparar = decenas)) and (not (a_comparar = unidades)) then
 		begin
 			writeln(a_comparar, ' no aparece en ', unidades_mil, centenas, decenas, unidades);
 			halt;
