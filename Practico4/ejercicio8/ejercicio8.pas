@@ -11,9 +11,9 @@ begin
 	write('Ingrese un valor para n: ');
 	readln(n);
 
-	for i := 0 to n - 1 do
+	for i := 1 to n do
 	begin
-		for j := n - i downto 1 do
+		for j := n - i downto 0 do
 			write(c);
 
 		writeln(); 
