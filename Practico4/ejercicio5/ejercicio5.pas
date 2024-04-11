@@ -9,9 +9,7 @@ begin
 	for index := 1 to n do
 	begin
 		if (n mod index = 0) then
-		begin
 			write(index);
-		end;
 	end;
 
 	writeln();
