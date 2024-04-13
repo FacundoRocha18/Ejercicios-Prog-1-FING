@@ -1,11 +1,10 @@
 Program ejercicio11;
 
 var 
-	m, n, x, valor_maximo_x, valor_f_x, cuadrado_x, i, j: Integer;
+	m, n, x, valor_maximo_x, valor_f_x, i: Integer;
 
 begin
 	x := 0;
-	cuadrado_x := 0;
 	valor_maximo_x := 0;
 
 	write('Ingrese un valor para m: ');
@@ -17,14 +16,8 @@ begin
 	for i := m to n do
 	begin
 		x := i;
-		cuadrado_x := x;
-		
-		for j := 1 to 2 - 1 do
-		begin
-			cuadrado_x := cuadrado_x * x;
-		end;
 
-		valor_f_x := cuadrado_x - (18 * x) + 5;
+		valor_f_x := (x * x) - (18 * x) + 5;
 
 		if (i = m) then
 			valor_maximo_x := valor_f_x;
